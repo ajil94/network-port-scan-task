@@ -3,10 +3,13 @@ This performs a TCP SYN scan over the local network and saves results to a text 
 🔍 Scan Result Summary
 ✔️ Device Found: 192.168.1.15
 Port	State	Service	Description
-135	open	msrpc	Microsoft RPC service; used internally by Windows; can be exploited remotely
-139	open	netbios-ssn	NetBIOS Session Service; used for file sharing; often targeted in attacks
-445	open	microsoft-ds	SMB service; used for Windows file sharing and Active Directory
-5357	open	wsdapi	Web Services for Devices; typically for printers and media devices
+| Port | State | Service      | Description                                                                  |
+| ---- | ----- | ------------ | ---------------------------------------------------------------------------- |
+| 135  | open  | msrpc        | Microsoft RPC service; used internally by Windows; can be exploited remotely |
+| 139  | open  | netbios-ssn  | NetBIOS Session Service; used for file sharing; often targeted in attacks    |
+| 445  | open  | microsoft-ds | SMB service; used for Windows file sharing and Active Directory              |
+| 5357 | open  | wsdapi       | Web Services for Devices; typically for printers and media devices           |
+
 
 ⚠️ Security Risk Analysis
 Ports 135, 139, and 445 are well-known for being vulnerable to attacks like malware (e.g., WannaCry ransomware).
